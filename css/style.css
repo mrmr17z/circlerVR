@@ -1,0 +1,34 @@
+html,body{margin:0;height:100%;overflow:hidden;background:#1c2229;font-family:"Segoe UI",Tahoma,"Noto Kufi Arabic",sans-serif;color:#eef2f5}
+canvas{display:block}
+#start{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(20,26,32,.92);z-index:10}
+#start .card{max-width:620px;padding:28px 32px;background:#26303a;border-radius:14px;text-align:center;box-shadow:0 10px 40px #0008}
+#start h1{margin:0 0 6px;font-size:30px}
+#start p{margin:0 0 18px;color:#a9b6c2}
+.btns{display:flex;gap:12px;justify-content:center;margin:16px 0}
+button{font:inherit;font-size:18px;padding:12px 22px;border:0;border-radius:10px;background:#2f8f6f;color:#fff;cursor:pointer}
+button:disabled{opacity:.45;cursor:default}
+#btnVR{background:#3a6fb0}
+button.link{background:none;color:#8fa3b5;font-size:14px;text-decoration:underline}
+.keys{font-size:14px;line-height:1.9;color:#c5d0da;margin-top:12px;text-align:right}
+kbd{background:#3b4652;padding:1px 6px;border-radius:4px;direction:ltr;display:inline-block}
+#crosshair{display:none!important;position:fixed;left:50%;top:50%;width:8px;height:8px;margin:-4px 0 0 -4px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 3px #000;pointer-events:none;display:none}
+#crosshair.on{background:#ffd34d;border-color:#ffd34d}
+#hint{position:fixed;left:50%;top:calc(50% + 22px);transform:translateX(-50%);z-index:5;padding:4px 10px;border-radius:6px;background:#000a;font-size:15px;pointer-events:none;display:none;white-space:nowrap}
+#goggles{position:fixed;inset:0;pointer-events:none;display:none;border-radius:48px;box-shadow:inset 0 0 0 10px rgba(30,45,60,.55),inset 0 0 70px 30px rgba(120,190,230,.18)}
+#goggles.on{display:block}
+#fade{position:fixed;inset:0;background:#000;opacity:0;pointer-events:none;transition:opacity .45s}
+
+/* زر مؤقت لتخطي المشهد (للمراجعة) */
+#btnSkip{position:fixed;top:12px;left:12px;z-index:6;display:none;font-size:15px;padding:8px 14px;background:#8a5a12;opacity:.9}
+#btnSkip.on{display:block}
+
+/* شعار الأمد */
+.brand-logo{display:flex;align-items:center;justify-content:center;margin:0 auto 10px;height:84px}
+.brand-logo img{max-height:100%;max-width:260px;object-fit:contain;border-radius:12px}
+.brand-logo span{font-size:34px;font-weight:bold;color:#c9a227;letter-spacing:1px}
+.brand-logo.has-img span{display:none}
+#brandBadge{position:fixed;top:10px;right:12px;z-index:6;height:48px;margin:0;padding:0;overflow:hidden;background:#131c31;border-radius:10px;display:none;pointer-events:none}
+#brandBadge.on{display:flex}
+#brandBadge span{font-size:20px;color:#fff;padding:0 12px}
+.name-row{display:block;margin:0 0 6px;color:#c5d0da;font-size:15px}
+.name-row input{font:inherit;font-size:16px;padding:6px 10px;border-radius:8px;border:1px solid #4a5866;background:#1c2229;color:#fff;width:220px;margin-right:6px}

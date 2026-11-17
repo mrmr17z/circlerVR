@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مختبر الحركة الدائرية</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three/three.module.js",
+  "three/addons/": "./vendor/three/addons/"
+} }
+</script>
+</head>
+<body>
+<div id="start">
+  <div class="card">
+    <div id="brandLogo" class="brand-logo"><span>الأمد</span></div>
+    <h1>مختبر الحركة الدائرية</h1>
+    <p>الفيزياء 1 · الفصل 6 · الحركة في بعدين</p>
+    <label class="name-row">اسمك كما سيظهر في الشهادة: <input id="studentName" maxlength="40" placeholder="اكتب اسمك"></label>
+    <div id="loading">جارٍ تحميل المختبر…</div>
+    <div class="btns">
+      <button id="btnDesktop" disabled>ابدأ على الكمبيوتر</button>
+      <button id="btnVR" disabled>ادخل بالنظارة (VR)</button>
+    </div>
+    <button id="btnReset" class="link">بدء من جديد (مسح التقدم)</button>
+    <div class="keys">
+      <b>الكمبيوتر:</b> WASD للمشي · اسحب بالماوس (الزر الأيمن أو الأيسر على فراغ) للالتفات · ضع المؤشر على أداة واضغط <kbd>E</kbd> للإمساك/الإفلات · انقر على الأزرار والأهداف ·
+      <kbd>R</kbd>/العجلة لتدوير الأداة · حرّك الماوس في دوائر وأنت ماسك الأنبوب لتدوير السدادة (أو استمر على <kbd>Space</kbd>) · <kbd>Esc</kbd> إيقاف مؤقت<br>
+      <b>النظارة:</b> العصا اليسرى للمشي · اليمنى للالتفاف (اسحب للأمام للانتقال القفزي) · Grip للإمساك · Trigger للضغط
+    </div>
+  </div>
+</div>
+<div id="brandBadge" class="brand-logo small"><span>الأمد</span></div>
+<div id="crosshair"></div>
+<div id="hint"></div>
+<button id="btnSkip" title="زر مؤقت للمراجعة — يُزال لاحقاً">⏭ المشهد التالي (N)</button>
+<div id="goggles"></div>
+<div id="fade"></div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
